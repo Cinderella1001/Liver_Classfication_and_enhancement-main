@@ -1,0 +1,358 @@
+Microsoft Windows [版本 10.0.22000.556]
+(c) Microsoft Corporation。保留所有权利。
+(base) E:\硕士\研一课程\研一下\（选修）深度学习\作业1\实现\LiverClassfication-main>python train.py --model googlenet --epochs 200
+using cpu device.
+2022-04-03 12:45:53.781101: W tensorflow/stream_executor/platform/default/dso_loader.cc:64] Could not load dynamic library 'cudart64_110.dll'; dlerror:
+ cudart64_110.dll not found
+2022-04-03 12:45:53.781440: I tensorflow/stream_executor/cuda/cudart_stub.cc:29] Ignore above cudart dlerror if you do not have a GPU set up on your ma
+chine.
+Using 0 dataloader workers every process
+11193 images were found in the dataset.
+8517 images for training.
+2676 images for validation.
+Param groups = {
+  "decay": {
+    "params": [
+      "conv1.conv.weight",
+      "conv2.conv.weight",
+      "conv3.conv.weight",
+      "inception3a.branch1.conv.weight",
+      "inception3a.branch2.0.conv.weight",
+      "inception3a.branch2.1.conv.weight",
+      "inception3a.branch3.0.conv.weight",
+      "inception3a.branch3.1.conv.weight",
+      "inception3a.branch4.1.conv.weight",
+      "inception3b.branch1.conv.weight",
+      "inception3b.branch2.0.conv.weight",
+      "inception3b.branch2.1.conv.weight",
+      "inception3b.branch3.0.conv.weight",
+      "inception3b.branch3.1.conv.weight",
+      "inception3b.branch4.1.conv.weight",
+      "inception4a.branch1.conv.weight",
+      "inception4a.branch2.0.conv.weight",
+      "inception4a.branch2.1.conv.weight",
+      "inception4a.branch3.0.conv.weight",
+      "inception4a.branch3.1.conv.weight",
+      "inception4a.branch4.1.conv.weight",
+      "inception4b.branch1.conv.weight",
+      "inception4b.branch2.0.conv.weight",
+      "inception4b.branch2.1.conv.weight",
+      "inception4b.branch3.0.conv.weight",
+      "inception4b.branch3.1.conv.weight",
+      "inception4b.branch4.1.conv.weight",
+      "inception4c.branch1.conv.weight",
+      "inception4c.branch2.0.conv.weight",
+      "inception4c.branch2.1.conv.weight",
+      "inception4c.branch3.0.conv.weight",
+      "inception4c.branch3.1.conv.weight",
+      "inception4c.branch4.1.conv.weight",
+      "inception4d.branch1.conv.weight",
+      "inception4d.branch2.0.conv.weight",
+      "inception4d.branch2.1.conv.weight",
+      "inception4d.branch3.0.conv.weight",
+      "inception4d.branch3.1.conv.weight",
+      "inception4d.branch4.1.conv.weight",
+      "inception4e.branch1.conv.weight",
+      "inception4e.branch2.0.conv.weight",
+      "inception4e.branch2.1.conv.weight",
+      "inception4e.branch3.0.conv.weight",
+      "inception4e.branch3.1.conv.weight",
+      "inception4e.branch4.1.conv.weight",
+      "inception5a.branch1.conv.weight",
+      "inception5a.branch2.0.conv.weight",
+      "inception5a.branch2.1.conv.weight",
+      "inception5a.branch3.0.conv.weight",
+      "inception5a.branch3.1.conv.weight",
+      "inception5a.branch4.1.conv.weight",
+      "inception5b.branch1.conv.weight",
+      "inception5b.branch2.0.conv.weight",
+      "inception5b.branch2.1.conv.weight",
+      "inception5b.branch3.0.conv.weight",
+      "inception5b.branch3.1.conv.weight",
+      "inception5b.branch4.1.conv.weight",
+      "fc.weight"
+    ],
+    "weight_decay": 0.05
+  },
+  "no_decay": {
+    "params": [
+      "conv1.conv.bias",
+      "conv2.conv.bias",
+      "conv3.conv.bias",
+      "inception3a.branch1.conv.bias",
+      "inception3a.branch2.0.conv.bias",
+      "inception3a.branch2.1.conv.bias",
+      "inception3a.branch3.0.conv.bias",
+      "inception3a.branch3.1.conv.bias",
+      "inception3a.branch4.1.conv.bias",
+      "inception3b.branch1.conv.bias",
+      "inception3b.branch2.0.conv.bias",
+      "inception3b.branch2.1.conv.bias",
+      "inception3b.branch3.0.conv.bias",
+      "inception3b.branch3.1.conv.bias",
+      "inception3b.branch4.1.conv.bias",
+      "inception4a.branch1.conv.bias",
+      "inception4a.branch2.0.conv.bias",
+      "inception4a.branch2.1.conv.bias",
+      "inception4a.branch3.0.conv.bias",
+      "inception4a.branch3.1.conv.bias",
+      "inception4a.branch4.1.conv.bias",
+      "inception4b.branch1.conv.bias",
+      "inception4b.branch2.0.conv.bias",
+      "inception4b.branch2.1.conv.bias",
+      "inception4b.branch3.0.conv.bias",
+      "inception4b.branch3.1.conv.bias",
+      "inception4b.branch4.1.conv.bias",
+      "inception4c.branch1.conv.bias",
+      "inception4c.branch2.0.conv.bias",
+      "inception4c.branch2.1.conv.bias",
+      "inception4c.branch3.0.conv.bias",
+      "inception4c.branch3.1.conv.bias",
+      "inception4c.branch4.1.conv.bias",
+      "inception4d.branch1.conv.bias",
+      "inception4d.branch2.0.conv.bias",
+      "inception4d.branch2.1.conv.bias",
+      "inception4d.branch3.0.conv.bias",
+      "inception4d.branch3.1.conv.bias",
+      "inception4d.branch4.1.conv.bias",
+      "inception4e.branch1.conv.bias",
+      "inception4e.branch2.0.conv.bias",
+      "inception4e.branch2.1.conv.bias",
+      "inception4e.branch3.0.conv.bias",
+      "inception4e.branch3.1.conv.bias",
+      "inception4e.branch4.1.conv.bias",
+      "inception5a.branch1.conv.bias",
+      "inception5a.branch2.0.conv.bias",
+      "inception5a.branch2.1.conv.bias",
+      "inception5a.branch3.0.conv.bias",
+      "inception5a.branch3.1.conv.bias",
+      "inception5a.branch4.1.conv.bias",
+      "inception5b.branch1.conv.bias",
+      "inception5b.branch2.0.conv.bias",
+      "inception5b.branch2.1.conv.bias",
+      "inception5b.branch3.0.conv.bias",
+      "inception5b.branch3.1.conv.bias",
+      "inception5b.branch4.1.conv.bias",
+      "fc.bias"
+    ],
+    "weight_decay": 0.0
+  }
+}
+training......
+[train epoch 0] loss: 1.977, acc: 0.208, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [15:31<00:00,  1.14it/s]
+evaluating......
+[valid epoch 0] loss: 1.615, acc: 0.286: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:15<00:00,  2.46it/s]
+saving best model......
+best_acc= 0.2863551401869159
+training......
+[train epoch 1] loss: 1.559, acc: 0.320, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [51:34<00:00,  2.91s/it]
+evaluating......
+[valid epoch 1] loss: 1.107, acc: 0.499: 100%|████████████████████████████
+██████████████████████████████████████████| 335/335 [01:59<00:00,  2.80it/
+s]
+saving best model......
+best_acc= 0.49906542056074765
+training......
+[train epoch 2] loss: 1.324, acc: 0.422, lr: 0.00050: 100%|███████████████
+████████████████████████████████████████| 1065/1065 [15:09<00:00,  1.17it/
+s]
+evaluating......
+[valid epoch 2] loss: 0.920, acc: 0.594:  42%|████████████████████████████
+█▎                                        | 140/335 [00:52<01:07,  2.87it/
+[valid epoch 2] loss: 0.923, acc: 0.594:  42%|████████████████████████████
+█▍                                        | 141/335 [00:52<01:09,  2.78it/
+[valid epoch 2] loss: 0.926, acc: 0.595:  42%|████████████████████████████
+█▋                                        | 142/335 [00:53<01:09,  2.77it/
+[valid epoch 2] loss: 0.926, acc: 0.594:  43%|████████████████████████████
+█▉                                        | 143/335 [00:53<01:10,  2.74it/
+[valid epoch 2] loss: 0.930, acc: 0.594:  43%|████████████████████████████
+██                                        | 144/335 [00:53<01:09,  2.77it/
+[valid epoch 2] loss: 0.932, acc: 0.592:  43%|████████████████████████████
+██▎                                       | 145/335 [00:54<01:07,  2.80it/
+[valid epoch 2] loss: 0.934, acc: 0.591:  44%|████████████████████████████
+██▌                                       | 146/335 [00:54<01:06,  2.83it/
+[valid epoch 2] loss: 0.935, acc: 0.592:  44%|████████████████████████████
+██▋                                       | 147/335 [00:54<01:06,  2.83it/
+[valid epoch 2] loss: 0.935, acc: 0.593:  44%|████████████████████████████
+██▉                                       | 148/335 [00:55<01:05,  2.86it/
+[valid epoch 2] loss: 0.937, acc: 0.591:  44%|████████████████████████████
+███▏                                      | 149/335 [00:55<01:05,  2.86it/
+[valid epoch 2] loss: 0.938, acc: 0.592:  45%|████████████████████████████
+███▎                                      | 150/335 [00:55<01:04,  2.86it/
+[valid epoch 2] loss: 0.942, acc: 0.590:  45%|███████████████████████████████▌                                      | 151/335 [00:56<01:06,  2.78it/[va
+lid epoch 2] loss: 0.943, acc: 0.588:  45%|███████████████████████████████▊                                      | 152/335 [00:56<01:05,  2.81it/[valid
+ epoch 2] loss: 0.945, acc: 0.587:  46%|███████████████████████████████▉                                      | 153/335 [00:57<01:05,  2.79it/[valid ep
+[valid epoch 2] loss: 0.868, acc: 0.599: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.69it/s]
+saving best model......
+best_acc= 0.5985046728971962
+
+training......
+[train epoch 3] loss: 1.130, acc: 0.514, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [15:09<00:00,  1.17it/s]
+evaluating......
+[valid epoch 3] loss: 0.504, acc: 0.797: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:05<00:00,  2.66it/s]
+saving best model......
+best_acc= 0.7966355140186916
+
+training......
+[train epoch 4] loss: 0.922, acc: 0.641, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [14:34<00:00,  1.22it/s]
+evaluating......
+[valid epoch 4] loss: 0.528, acc: 0.825: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:06<00:00,  2.66it/s]
+saving best model......
+best_acc= 0.8254205607476636
+
+training......
+[train epoch 5] loss: 0.776, acc: 0.708, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [15:21<00:00,  1.16it/s]
+evaluating......
+[valid epoch 5] loss: 0.312, acc: 0.913: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:06<00:00,  2.66it/s]
+saving best model......
+best_acc= 0.9125233644859813
+
+training......
+[train epoch 6] loss: 0.671, acc: 0.753, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [14:47<00:00,  1.20it/s]
+evaluating......
+[valid epoch 6] loss: 0.199, acc: 0.935: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.68it/s]
+saving best model......
+best_acc= 0.9345794392523364
+
+training......
+[train epoch 7] loss: 0.612, acc: 0.781, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [14:39<00:00,  1.21it/s]
+evaluating......
+[valid epoch 7] loss: 0.192, acc: 0.942: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.70it/s]
+saving best model......
+best_acc= 0.9420560747663551
+
+training......
+[train epoch 8] loss: 0.544, acc: 0.799, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [14:22<00:00,  1.23it/s]
+evaluating......
+[valid epoch 8] loss: 0.159, acc: 0.950: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:07<00:00,  2.62it/s]
+saving best model......
+best_acc= 0.9495327102803738
+
+training......
+[train epoch 9] loss: 0.507, acc: 0.817, lr: 0.00050: 100%|███████████████████████████████████████████████████████| 1065/1065 [14:26<00:00,  1.23it/s]
+evaluating......
+[valid epoch 9] loss: 0.168, acc: 0.950: 100%|██████████████████████████████████████████████████████████████████████| 335/335 [02:02<00:00,  2.74it/s]
+best_acc= 0.9495327102803738
+
+training......
+[train epoch 10] loss: 0.489, acc: 0.821, lr: 0.00050: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:24<00:00,  1.23it/s]
+evaluating......
+[valid epoch 10] loss: 0.192, acc: 0.941: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:05<00:00,  2.67it/s]
+best_acc= 0.9495327102803738
+
+training......
+[train epoch 11] loss: 0.457, acc: 0.834, lr: 0.00050: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:48<00:00,  1.20it/s]
+evaluating......
+[valid epoch 11] loss: 0.148, acc: 0.955: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.70it/s]
+saving best model......
+best_acc= 0.9547663551401869
+
+training......
+[train epoch 12] loss: 0.466, acc: 0.831, lr: 0.00050: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:34<00:00,  1.22it/s]
+evaluating......
+[valid epoch 12] loss: 0.144, acc: 0.960: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.69it/s]
+saving best model......
+best_acc= 0.96
+
+training......
+[train epoch 13] loss: 0.419, acc: 0.845, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:29<00:00,  1.22it/s]
+evaluating......
+[valid epoch 13] loss: 0.109, acc: 0.967: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.69it/s]
+saving best model......
+best_acc= 0.9674766355140187
+
+training......
+[train epoch 14] loss: 0.420, acc: 0.847, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:33<00:00,  1.22it/s]
+evaluating......
+[valid epoch 14] loss: 0.097, acc: 0.973: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:02<00:00,  2.74it/s]
+saving best model......
+best_acc= 0.9730841121495327
+
+training......
+[train epoch 15] loss: 0.389, acc: 0.856, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:25<00:00,  1.23it/s]
+evaluating......
+[valid epoch 15] loss: 0.095, acc: 0.971: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:01<00:00,  2.77it/s]
+best_acc= 0.9730841121495327
+
+training......
+[train epoch 16] loss: 0.389, acc: 0.858, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:11<00:00,  1.25it/s]
+evaluating......
+[valid epoch 16] loss: 0.105, acc: 0.968: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:00<00:00,  2.78it/s]
+best_acc= 0.9730841121495327
+
+training......
+[train epoch 17] loss: 0.372, acc: 0.867, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:13<00:00,  1.25it/s]
+evaluating......
+[valid epoch 17] loss: 0.110, acc: 0.971: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:01<00:00,  2.76it/s]
+best_acc= 0.9730841121495327
+training......
+
+[train epoch 18] loss: 0.364, acc: 0.867, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:32<00:00,  1.22it/s]
+evaluating......
+[valid epoch 18] loss: 0.070, acc: 0.984: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.70it/s]
+saving best model......
+best_acc= 0.9842990654205608
+
+training......
+[train epoch 19] loss: 0.341, acc: 0.876, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:33<00:00,  1.22it/s]
+evaluating......
+[valid epoch 19] loss: 0.095, acc: 0.975: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:05<00:00,  2.68it/s]
+best_acc= 0.9842990654205608
+
+training......
+[train epoch 20] loss: 0.352, acc: 0.869, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:36<00:00,  1.21it/s]
+evaluating......
+[valid epoch 20] loss: 0.137, acc: 0.956: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.69it/s]
+best_acc= 0.9842990654205608
+
+training......
+[train epoch 21] loss: 0.344, acc: 0.870, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:33<00:00,  1.22it/s]
+evaluating......
+[valid epoch 21] loss: 0.102, acc: 0.972: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:03<00:00,  2.72it/s]
+best_acc= 0.9842990654205608
+
+training......
+[train epoch 22] loss: 0.344, acc: 0.878, lr: 0.00049: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:33<00:00,  1.22it/s]
+evaluating......
+[valid epoch 22] loss: 0.099, acc: 0.972: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.69it/s]
+best_acc= 0.9842990654205608
+
+training......
+[train epoch 23] loss: 0.323, acc: 0.883, lr: 0.00048:  73%|████████████████████████████████████████▏              | 778/1065 [10:41<04:08,  1.15it/[tr
+ain epoch 23] loss: 0.323, acc: 0.883, lr: 0.00048:  73%|████████████████████████████████████████▏              | 779/1065 [10:42<04:10,  1.14it/[train
+[train epoch 23] loss: 0.320, acc: 0.883, lr: 0.00048: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:47<00:00,  1.20it/s]
+evaluating......
+[valid epoch 23] loss: 0.117, acc: 0.967: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:05<00:00,  2.67it/s]
+best_acc= 0.9842990654205608
+
+
+training......
+[train epoch 24] loss: 0.334, acc: 0.880, lr: 0.00048: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:39<00:00,  1.21it/s]
+evaluating......
+[valid epoch 24] loss: 0.092, acc: 0.975: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:05<00:00,  2.67it/s]
+best_acc= 0.9842990654205608
+
+
+training......
+[train epoch 25] loss: 0.314, acc: 0.885, lr: 0.00048: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:34<00:00,  1.22it/s]
+evaluating......
+[valid epoch 25] loss: 0.152, acc: 0.951: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.70it/s]
+best_acc= 0.9842990654205608
+
+
+training......
+[train epoch 26] loss: 0.304, acc: 0.892, lr: 0.00048: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:36<00:00,  1.21it/s]
+evaluating......
+[valid epoch 26] loss: 0.112, acc: 0.975: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:04<00:00,  2.69it/s]
+best_acc= 0.9842990654205608
+
+
+training......
+[train epoch 27] loss: 0.322, acc: 0.882, lr: 0.00048: 100%|██████████████████████████████████████████████████████| 1065/1065 [14:53<00:00,  1.19it/s]
+evaluating......
+[valid epoch 27] loss: 0.083, acc: 0.976: 100%|█████████████████████████████████████████████████████████████████████| 335/335 [02:05<00:00,  2.66it/s]
+best_acc= 0.9842990654205608
+
+
+
+

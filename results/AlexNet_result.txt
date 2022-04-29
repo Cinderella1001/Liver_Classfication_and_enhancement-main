@@ -1,0 +1,140 @@
+DAppanacodaaenvscpupytorchpython.exe DApppycharmPyCharm Community Edition 2021.3.3pluginspython-cehelperspydevpydevconsole.py --mode=client --port=51489
+import sys; print('Python %s on %s' % (sys.version, sys.platform))
+sys.path.extend(['EpythonProjectpythonProject', 'EpythonProjectpythonProject'])
+PyDev console starting.
+Python 3.6.13 Anaconda, Inc. (default, Mar 16 2021, 113727) [MSC v.1916 64 bit (AMD64)] on win32
+ runfile('EpythonProjectpythonProjecttrain.py', wdir='EpythonProjectpythonProject')
+using cpu device.
+11193 images were found in the dataset.
+8517 images for training.
+2676 images for validation.
+Using 0 dataloader workers every process
+Param groups = {
+  decay {
+    params [
+      features.0.weight,
+      features.3.weight,
+      features.6.weight,
+      features.8.weight,
+      features.10.weight,
+      classifier.1.weight,
+      classifier.4.weight,
+      classifier.6.weight
+    ],
+    weight_decay 0.05
+  },
+  no_decay {
+    params [
+      features.0.bias,
+      features.3.bias,
+      features.6.bias,
+      features.8.bias,
+      features.10.bias,
+      classifier.1.bias,
+      classifier.4.bias,
+      classifier.6.bias
+    ],
+    weight_decay 0.0
+  }
+}
+[train epoch 0] loss 1.678, acc 0.254, lr 0.00050 100%██████████ 10651065 [04070000,  4.30its]
+[valid epoch 0] loss 1.411, acc 0.366 100%██████████ 335335 [48110000,  8.63sit]
+[train epoch 1] loss 1.452, acc 0.364, lr 0.00050 100%██████████ 10651065 [04040000,  4.35its]
+[valid epoch 1] loss 1.003, acc 0.587 100%██████████ 335335 [00320000, 10.18its]
+[train epoch 2] loss 1.211, acc 0.468, lr 0.00050 100%██████████ 10651065 [03580000,  4.47its]
+[valid epoch 2] loss 0.850, acc 0.614 100%██████████ 335335 [00330000, 10.07its]
+[train epoch 3] loss 1.062, acc 0.552, lr 0.00050 100%██████████ 10651065 [04030000,  4.38its]
+[valid epoch 3] loss 0.518, acc 0.757 100%██████████ 335335 [00320000, 10.16its]
+[train epoch 4] loss 0.913, acc 0.633, lr 0.00049 100%██████████ 10651065 [04010000,  4.41its]
+[valid epoch 4] loss 0.381, acc 0.882 100%██████████ 335335 [00340000,  9.69its]
+[train epoch 5] loss 0.770, acc 0.709, lr 0.00049 100%██████████ 10651065 [04050000,  4.34its]
+[valid epoch 5] loss 0.307, acc 0.904 100%██████████ 335335 [00330000,  9.89its]
+[train epoch 6] loss 0.724, acc 0.734, lr 0.00048 100%██████████ 10651065 [04080000,  4.29its]
+[valid epoch 6] loss 0.232, acc 0.927 100%██████████ 335335 [00340000,  9.75its]
+[train epoch 7] loss 0.640, acc 0.761, lr 0.00048 100%██████████ 10651065 [04040000,  4.35its]
+[valid epoch 7] loss 0.235, acc 0.929 100%██████████ 335335 [00330000, 10.08its]
+[train epoch 8] loss 0.622, acc 0.771, lr 0.00047 100%██████████ 10651065 [04040000,  4.36its]
+[valid epoch 8] loss 0.262, acc 0.917 100%██████████ 335335 [00330000, 10.04its]
+[train epoch 9] loss 0.567, acc 0.790, lr 0.00046 100%██████████ 10651065 [04070000,  4.31its]
+[valid epoch 9] loss 0.226, acc 0.926 100%██████████ 335335 [00290000, 11.20its]
+[train epoch 10] loss 0.552, acc 0.796, lr 0.00045 100%██████████ 10651065 [03420000,  4.79its]
+[valid epoch 10] loss 0.202, acc 0.951 100%██████████ 335335 [00270000, 12.11its]
+[train epoch 11] loss 0.528, acc 0.809, lr 0.00044 100%██████████ 10651065 [05410000,  3.12its]
+[valid epoch 11] loss 0.198, acc 0.942 100%██████████ 335335 [00280000, 11.82its]
+[train epoch 12] loss 0.526, acc 0.806, lr 0.00043 100%██████████ 10651065 [03550000,  4.52its]
+[valid epoch 12] loss 0.285, acc 0.906 100%██████████ 335335 [00390000,  8.51its]
+[train epoch 13] loss 0.489, acc 0.818, lr 0.00042 100%██████████ 10651065 [04150000,  4.17its]
+[valid epoch 13] loss 0.157, acc 0.954 100%██████████ 335335 [00360000,  9.13its]
+[train epoch 14] loss 0.484, acc 0.819, lr 0.00041 100%██████████ 10651065 [04170000,  4.13its]
+[valid epoch 14] loss 0.157, acc 0.950 100%██████████ 335335 [00340000,  9.67its]
+[train epoch 15] loss 0.471, acc 0.826, lr 0.00039 100%██████████ 10651065 [03530000,  4.56its]
+[valid epoch 15] loss 0.149, acc 0.962 100%██████████ 335335 [00270000, 11.99its]
+[train epoch 16] loss 0.453, acc 0.832, lr 0.00038 100%██████████ 10651065 [03350000,  4.94its]
+[valid epoch 16] loss 0.130, acc 0.963 100%██████████ 335335 [00270000, 12.02its]
+[train epoch 17] loss 0.445, acc 0.834, lr 0.00037 100%██████████ 10651065 [03360000,  4.93its]
+[valid epoch 17] loss 0.113, acc 0.970 100%██████████ 335335 [47520000,  8.58sit]
+[train epoch 18] loss 0.428, acc 0.844, lr 0.00035 100%██████████ 10651065 [04040000,  4.35its]
+[valid epoch 18] loss 0.159, acc 0.956 100%██████████ 335335 [00430000,  7.62its]
+[train epoch 19] loss 0.422, acc 0.848, lr 0.00034 100%██████████ 10651065 [03480000,  4.66its]
+[valid epoch 19] loss 0.185, acc 0.945 100%██████████ 335335 [00270000, 12.26its]
+[train epoch 20] loss 0.398, acc 0.853, lr 0.00032 100%██████████ 10651065 [03370000,  4.89its]
+[valid epoch 20] loss 0.109, acc 0.971 100%██████████ 335335 [00270000, 12.26its]
+[train epoch 21] loss 0.389, acc 0.858, lr 0.00031 100%██████████ 10651065 [03380000,  4.88its]
+[valid epoch 21] loss 0.125, acc 0.969 100%██████████ 335335 [00270000, 12.23its]
+[train epoch 22] loss 0.384, acc 0.861, lr 0.00029 100%██████████ 10651065 [03370000,  4.90its]
+[valid epoch 22] loss 0.092, acc 0.974 100%██████████ 335335 [00270000, 12.29its]
+[train epoch 23] loss 0.370, acc 0.866, lr 0.00027 100%██████████ 10651065 [03370000,  4.90its]
+[valid epoch 23] loss 0.153, acc 0.954 100%██████████ 335335 [00270000, 12.25its]
+[train epoch 24] loss 0.353, acc 0.867, lr 0.00026 100%██████████ 10651065 [03370000,  4.90its]
+[valid epoch 24] loss 0.091, acc 0.975 100%██████████ 335335 [00270000, 12.26its]
+[train epoch 25] loss 0.361, acc 0.868, lr 0.00024 100%██████████ 10651065 [03360000,  4.93its]
+[valid epoch 25] loss 0.088, acc 0.976 100%██████████ 335335 [00270000, 12.21its]
+[train epoch 26] loss 0.341, acc 0.872, lr 0.00023 100%██████████ 10651065 [03370000,  4.89its]
+[valid epoch 26] loss 0.108, acc 0.973 100%██████████ 335335 [00270000, 12.25its]
+[train epoch 27] loss 0.321, acc 0.887, lr 0.00021 100%██████████ 10651065 [03360000,  4.91its]
+[valid epoch 27] loss 0.096, acc 0.976 100%██████████ 335335 [00270000, 12.19its]
+[train epoch 28] loss 0.321, acc 0.882, lr 0.00019 100%██████████ 10651065 [03360000,  4.91its]
+[valid epoch 28] loss 0.077, acc 0.981 100%██████████ 335335 [00270000, 12.16its]
+[train epoch 29] loss 0.313, acc 0.882, lr 0.00018 100%██████████ 10651065 [03370000,  4.89its]
+[valid epoch 29] loss 0.090, acc 0.976 100%██████████ 335335 [00270000, 12.19its]
+[train epoch 30] loss 0.321, acc 0.880, lr 0.00016 100%██████████ 10651065 [03360000,  4.91its]
+[valid epoch 30] loss 0.063, acc 0.987 100%██████████ 335335 [00270000, 12.20its]
+[train epoch 31] loss 0.293, acc 0.888, lr 0.00015 100%██████████ 10651065 [03380000,  4.88its]
+[valid epoch 31] loss 0.071, acc 0.985 100%██████████ 335335 [00390000,  8.57its]
+[train epoch 32] loss 0.298, acc 0.893, lr 0.00013 100%██████████ 10651065 [04470000,  3.70its]
+[valid epoch 32] loss 0.076, acc 0.985 100%██████████ 335335 [00360000,  9.20its]
+[train epoch 33] loss 0.284, acc 0.895, lr 0.00012 100%██████████ 10651065 [04380000,  3.83its]
+[valid epoch 33] loss 0.070, acc 0.981 100%██████████ 335335 [00280000, 11.81its]
+[train epoch 34] loss 0.277, acc 0.898, lr 0.00011 100%██████████ 10651065 [03420000,  4.79its]
+[valid epoch 34] loss 0.063, acc 0.986 100%██████████ 335335 [00270000, 12.11its]
+[train epoch 35] loss 0.282, acc 0.896, lr 0.00009 100%██████████ 10651065 [03390000,  4.84its]
+[valid epoch 35] loss 0.085, acc 0.977 100%██████████ 335335 [00270000, 12.14its]
+[train epoch 36] loss 0.254, acc 0.905, lr 0.00008 100%██████████ 10651065 [03390000,  4.86its]
+[valid epoch 36] loss 0.064, acc 0.983 100%██████████ 335335 [00270000, 12.18its]
+[train epoch 37] loss 0.249, acc 0.906, lr 0.00007 100%██████████ 10651065 [03380000,  4.86its]
+[valid epoch 37] loss 0.068, acc 0.985 100%██████████ 335335 [00270000, 12.15its]
+[train epoch 38] loss 0.252, acc 0.904, lr 0.00006 100%██████████ 10651065 [03390000,  4.86its]
+[valid epoch 38] loss 0.075, acc 0.983 100%██████████ 335335 [00270000, 12.14its]
+[train epoch 39] loss 0.234, acc 0.909, lr 0.00005 100%██████████ 10651065 [03380000,  4.87its]
+[valid epoch 39] loss 0.069, acc 0.985 100%██████████ 335335 [00270000, 12.10its]
+[train epoch 40] loss 0.234, acc 0.911, lr 0.00004 100%██████████ 10651065 [03380000,  4.87its]
+[valid epoch 40] loss 0.067, acc 0.985 100%██████████ 335335 [00270000, 12.13its]
+[train epoch 41] loss 0.239, acc 0.913, lr 0.00003 100%██████████ 10651065 [03390000,  4.86its]
+[valid epoch 41] loss 0.080, acc 0.982 100%██████████ 335335 [00270000, 12.15its]
+[train epoch 42] loss 0.229, acc 0.912, lr 0.00002 100%██████████ 10651065 [04040000,  4.36its]
+[valid epoch 42] loss 0.068, acc 0.987 100%██████████ 335335 [00320000, 10.18its]
+[train epoch 43] loss 0.221, acc 0.915, lr 0.00002 100%██████████ 10651065 [04100000,  4.25its]
+[valid epoch 43] loss 0.073, acc 0.985 100%██████████ 335335 [00330000, 10.01its]
+[train epoch 44] loss 0.221, acc 0.916, lr 0.00001 100%██████████ 10651065 [04090000,  4.27its]
+[valid epoch 44] loss 0.071, acc 0.986 100%██████████ 335335 [00340000,  9.67its]
+[train epoch 45] loss 0.217, acc 0.920, lr 0.00001 100%██████████ 10651065 [04170000,  4.14its]
+[valid epoch 45] loss 0.073, acc 0.984 100%██████████ 335335 [00340000,  9.73its]
+[train epoch 46] loss 0.218, acc 0.918, lr 0.00000 100%██████████ 10651065 [04170000,  4.13its]
+[valid epoch 46] loss 0.070, acc 0.985 100%██████████ 335335 [00330000, 10.11its]
+[train epoch 47] loss 0.223, acc 0.913, lr 0.00000 100%██████████ 10651065 [04070000,  4.31its]
+[valid epoch 47] loss 0.072, acc 0.986 100%██████████ 335335 [00340000,  9.73its]
+[train epoch 48] loss 0.217, acc 0.918, lr 0.00000 100%██████████ 10651065 [04080000,  4.28its]
+[valid epoch 48] loss 0.070, acc 0.985 100%██████████ 335335 [00340000,  9.80its]
+[train epoch 49] loss 0.217, acc 0.918, lr 0.00000 100%██████████ 10651065 [04080000,  4.28its]
+[valid epoch 49] loss 0.070, acc 0.985 100%██████████ 335335 [00330000,  9.99its]
+Finished Training
