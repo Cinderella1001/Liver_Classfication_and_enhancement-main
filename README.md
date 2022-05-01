@@ -1,9 +1,9 @@
 # Liver_Classfication_and_enhancement-main
   使用AlexNet、GoogLeNet、ResNet完成图像分类任务，正确率分别达到98.57%、99.21%、99.43%；使用RGHS完成对图像亮度的增强，转成CIE-Lab颜色模型完成颜色的均衡，使得图像的可视化效果更好
 ## 项目文件介绍
-  -data 数据
-   -train_set 训练数据包含六种类别（4、58、67、123、1234、5678）
-   -test_set 测试数据包含六种类别
+  - -data 数据
+    - -train_set 训练数据包含六种类别（4、58、67、123、1234、5678）
+    - -test_set 测试数据包含六种类别
   -enhance_after_data\RGHS 增强后的图像
   -enhance_before_data 增强前的图像
   -RGHS 增强部分的代码
